@@ -1,24 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Transformers.js - Object Detection demo</title>
+    <title>Transformers.js - Text Summarization Demo</title>
 </head>
-
 <body>
     <main class="container">
-        <label class="custom-file-upload">
-            <input id="file-upload" type="file" accept="image/*" />
-            <img class="upload-icon" src="https://huggingface.co/datasets/Xenova/transformers.js-docs/resolve/main/upload-icon.png" />
-            Upload image
-        </label>
-        <div id="image-container"></div>
-        <p id="status"></p>
+        <h1>Text Summarization Demo</h1>
+        <textarea id="input-text" placeholder="Enter text to summarize..."></textarea>
+        <button id="summarize-btn">Summarize</button>
+        <h2>Summary</h2>
+        <p id="summary-output"></p>
     </main>
-    <script src="main.js" type="module"></script>
+    <script src="summarize.js" type="module"></script>
 </body>
-
 </html>
